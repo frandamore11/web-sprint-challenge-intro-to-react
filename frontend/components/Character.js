@@ -10,8 +10,8 @@ function Character({ person }) { // ❗ Add the props
   return (
     <div onClick={toggleHomeworld} className="character-card">
     <div className="card-body">
-      <h3 className="card-title">{person.name}</h3>
-      {showHomeworld && <p className="card-text">Planet: {person.homeworld}</p>}
+      <h3 className="character-name">{person.name}</h3>
+      {showHomeworld && <p className="character-planet">Planet: {person.homeworld}</p>}
     </div>
   </div>
   )
